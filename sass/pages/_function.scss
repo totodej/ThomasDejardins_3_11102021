@@ -1,0 +1,43 @@
+.function {
+    padding: 50px 20px 67px;
+    &__heading {
+        @include margin-block;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 30px;
+        row-gap: 30px;
+        @include laptop {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 30px;
+        }
+        &__link {
+            position: relative;
+            padding: 37px 33px 28px;
+            background-color: #F6F6F6;
+            border-radius: 20px;
+            text-decoration: none;
+            color: black;
+            margin-left: 11px;
+            box-shadow: 1px 3px 14px -7px grey;
+            font-weight: bold;
+            &__choice {
+                border-radius: 16px;
+                position: absolute;
+                background-color: $color-primary;
+                color: white;
+                padding: 4px 9px;
+                left: -11px;
+            }
+            &__icon {
+                margin-right: 27px;
+                color: #7E7E7E;
+                &--color {
+                    margin-right: 27px;
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+}
