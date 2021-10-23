@@ -8,3 +8,12 @@
     margin-block-start: 0px;
     margin-block-end: 0px;
 }
+
+@mixin btn {
+    border-radius: 40px;
+    border: 0;
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    color: white;
+    box-shadow: 1px 4px 15px -7px black;
+    font-size: 1.000em;
+}
