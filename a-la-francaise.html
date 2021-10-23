@@ -9,7 +9,10 @@
     </head>
     <body>
         <header class="header">
-                <img src="images/logo/ohmyfood.png" alt="logo" class="header__logo"/> 
+            <a href="index.html" class="header__link">
+                <i class="fas fa-arrow-left header__link__return"></i>
+            </a>
+            <img src="images/logo/ohmyfood.png" alt="logo" class="header__logo"/> 
         </header>
         <main class="container">
             <div class="image-bloc">
@@ -17,6 +20,7 @@
             </div>
             <section class="menu">
                 <h1 class="menu__heading">À la française</h1>
+                <i class="far fa-heart menu__icon"></i>
                 <div class="menu__list">
                     <div class="menu__list__category">
                         <h2 class="menu__list__category__heading">Entrées</h2>
@@ -79,7 +83,9 @@
                         </div>
                     </div>
                 </div>
-                <button>Commander</button>
+                <div class="menu__button">
+                    <button class="menu__button__btn">Commander</button>
+                </div> 
             </section>
         </main>
         <footer class="footer">
