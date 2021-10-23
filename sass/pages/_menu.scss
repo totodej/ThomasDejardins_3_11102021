@@ -1,0 +1,83 @@
+.menu {
+    background-color: #F6F6F6;
+    padding: 45px 10px;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: -45px;
+    position: relative;
+    &__heading {
+        font-family: "Shrikhand";
+        font-size: 1.750em;
+        padding: 0px 10px;
+        @include margin-block;
+    }
+    &__icon {
+        position: absolute;
+        top: 50px;
+        right: 38px;
+        font-size: 26px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 43px;
+        margin: 43px 0px 50px;
+        &__category {
+            &__heading {
+                text-transform: uppercase;
+                font-size: 1.000em;
+                font-weight: 300;
+                padding: 0px 10px 8px 10px;
+                @include margin-block;
+                position: relative;
+            }
+            &__heading:after {
+                content: "";
+                width: 40px;
+                height: 4px;
+                background-color: #99e2d0;
+                position: absolute;
+                left: 10px;
+                bottom: 0px;
+            }
+            &__listing {
+                display: grid;
+                grid-template-columns: 100%;
+                row-gap: 13px;
+                margin-top: 13px;
+                &__choice {
+                    background-color: white;
+                    box-shadow: 1px 3px 14px -7px grey;
+                    border-radius: 15px;
+                    padding: 10px;
+                    position: relative;
+                    &__title {
+                        @include margin-block;
+                        font-weight: 400;
+                        font-size: 1.165em;
+                    }
+                    &__description {
+                        @include margin-block;
+                        font-weight: 300;
+                        margin-top: 7px;
+                        font-size: 0.960em;
+                    }
+                    &__price {
+                        @include margin-block;
+                        position: absolute;
+                        font-weight: 500;
+                        right: 23px;
+                        bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    &__button{
+        text-align: center;
+        &__btn {
+            @include btn;
+            padding: 15px 46px;
+            
+        }
+    } 
+}
