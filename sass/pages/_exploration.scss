@@ -1,0 +1,18 @@
+.exploration {
+    text-align: center;
+    background-color: #F6F6F6;
+    padding: 44px 20px 57px 20px;
+    &__heading {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+    &__text {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-weight: 300;
+    }
+    &__btn {
+        @include btn;
+        padding: 15px 22px;
+    }
+}

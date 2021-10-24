@@ -1,0 +1,26 @@
+.footer {
+    background-color: #353535; 
+    padding: 30px 20px; 
+    &__heading {
+        font-family: "Shrikhand";
+        color: white;
+        @include margin-block;
+        font-size: 18px;
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: 100%;
+        padding-top: 30px;
+        row-gap: 17px;
+        &__link {
+            color: white;
+            text-decoration: none;
+            &__icon {
+                margin-right: 11px;
+                &--margin {
+                    margin-right: 4px;
+                }
+            }
+        }
+    }
+}
