@@ -12,10 +12,6 @@
         grid-template-columns: 100%;
         padding-top: 30px;
         row-gap: 17px;
-        @include laptop {
-            grid-template-columns: repeat(4, 1fr);
-            column-gap: 17px;
-        }
         &__link {
             color: white;
             text-decoration: none;
