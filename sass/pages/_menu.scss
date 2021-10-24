@@ -21,6 +21,10 @@
         grid-template-columns: 100%;
         row-gap: 43px;
         margin: 43px 0px 50px;
+        @include desktop {
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 20px;
+        }
         &__category {
             &__heading {
                 text-transform: uppercase;
