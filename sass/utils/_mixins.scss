@@ -23,3 +23,8 @@
     box-shadow: 1px 4px 15px -7px black;
     font-size: 1.000em;
 }
+
+@mixin btn-hover {
+    box-shadow: 1px 4px 20px -7px black;
+    opacity:0.8;
+}
