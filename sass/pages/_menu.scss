@@ -82,7 +82,10 @@
         &__btn {
             @include btn;
             padding: 15px 46px;
-            
+            cursor: pointer;
+            &:hover {
+                @include btn-hover;
+            }
         }
     } 
 }
