@@ -3,6 +3,8 @@
     padding: 63px 20px;
     &__heading {
         @include margin-block;
+        font-size: 1.5em;
+        font-weight: 500;
     }
     &__list {
         display: grid;
@@ -24,7 +26,8 @@
                 background-color: $color-tertiary;
                 color: #3A8767;
                 font-size: 14px;
-                padding: 5px 9px;
+                font-weight: 500;
+                padding: 7px 12px;
                 border-radius: 2px;
                 top: 13px;
                 right: 13px
@@ -49,6 +52,7 @@
                     @include margin-block; 
                     padding-top: 17px;
                     font-size: 17px;
+                    font-weight: 500;
                 }
                 &__text {
                     @include margin-block;
