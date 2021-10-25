@@ -7,6 +7,7 @@
     &__heading {
         font-family: "Shrikhand";
         font-size: 1.750em;
+        font-weight: 500;
         padding: 0px 10px;
         @include margin-block;
     }
@@ -20,7 +21,7 @@
         display: grid;
         grid-template-columns: 100%;
         row-gap: 43px;
-        margin: 43px 0px 50px;
+        margin: 35px 0px 50px;
         @include desktop {
             grid-template-columns: repeat(3, 1fr);
             column-gap: 20px;

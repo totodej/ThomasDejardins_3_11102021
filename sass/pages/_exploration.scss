@@ -3,12 +3,14 @@
     background-color: #F6F6F6;
     padding: 44px 20px 57px 20px;
     &__heading {
+        @include margin-block;
         margin-left: 25px;
         margin-right: 25px;
+        font-size: 1.5em;
+    font-weight: 500;
     }
     &__text {
-        margin-left: 20px;
-        margin-right: 20px;
+        font-size: 1.13em;
         font-weight: 300;
     }
     &__btn {
