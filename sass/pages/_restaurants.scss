@@ -46,7 +46,18 @@
                     position: absolute;
                     top: 23px;
                     right: 25px;
-                    font-size: 26px;
+                    font-size: 26px; 
+                    &--display {
+                        position: absolute;
+                        top: 23px;
+                        right: 25px;
+                        font-size: 26px;
+                        opacity: 0;
+                        color: linear-gradient(180deg, #9b44d9 -10%, #e44fd7 110%);
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
                 }
                 &__heading {
                     @include margin-block; 
