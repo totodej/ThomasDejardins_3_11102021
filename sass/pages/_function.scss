@@ -25,6 +25,12 @@
             box-shadow: 1px 3px 14px -7px grey;
             font-weight: 400;
             font-size: 1.0em;
+            &:hover {
+                background-color: lighten($color-primary,35%);
+                .fas {
+                    color: $color-primary;
+                }
+            }
             &__choice {
                 border-radius: 16px;
                 position: absolute;
@@ -42,6 +48,7 @@
                     color: $color-primary;
                 }
             }
+            
         }
     }
 }
