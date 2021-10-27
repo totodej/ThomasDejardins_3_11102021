@@ -1,9 +1,11 @@
 .localisation {
     background-color: #EAEAEA;
     padding: 16px 0px;
+    text-align: center;
     &__text {
         @include margin-block;
-        text-align: center;
+        text-decoration: none;
+        color: black;
         &__icon {
             margin-right: 18px;
         }
