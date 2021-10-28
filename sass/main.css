@@ -24,8 +24,7 @@ body {
   width: 163px;
   display: block;
   margin: auto;
-  padding-top: 23px;
-  padding-bottom: 13px;
+  padding: 23px 0px 13px 24px;
 }
 
 .footer {
