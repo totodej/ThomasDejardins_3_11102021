@@ -48,6 +48,9 @@ body {
   text-decoration: none;
   font-weight: 400;
 }
+.footer__list__link:hover {
+  text-decoration: underline;
+}
 .footer__list__link__icon {
   margin-right: 11px;
 }
@@ -115,11 +118,13 @@ body {
 .localisation {
   background-color: #EAEAEA;
   padding: 16px 0px;
+  text-align: center;
 }
 .localisation__text {
   margin-block-start: 0px;
   margin-block-end: 0px;
-  text-align: center;
+  text-decoration: none;
+  color: black;
 }
 .localisation__text__icon {
   margin-right: 18px;
@@ -260,40 +265,51 @@ body {
   height: 174px;
   object-fit: cover;
 }
-.restaurants__list__link__description {
-  position: relative;
+.restaurants__list__link__figure {
+  display: grid;
+  grid-template-columns: 1fr 26px 25px;
   color: black;
+}
+.restaurants__list__link__figure__description {
   padding-left: 14px;
 }
-.restaurants__list__link__description__icon {
-  position: absolute;
-  top: 23px;
-  right: 25px;
-  font-size: 26px;
-}
-.restaurants__list__link__description__icon--display {
-  position: absolute;
-  top: 23px;
-  right: 25px;
-  font-size: 26px;
-  opacity: 0;
-  color: linear-gradient(180deg, #9b44d9 -10%, #e44fd7 110%);
-}
-.restaurants__list__link__description__icon--display:hover {
-  opacity: 1;
-}
-.restaurants__list__link__description__heading {
+.restaurants__list__link__figure__description__heading {
   margin-block-start: 0px;
   margin-block-end: 0px;
   padding-top: 17px;
   font-size: 17px;
   font-weight: 500;
 }
-.restaurants__list__link__description__text {
+.restaurants__list__link__figure__description__text {
   margin-block-start: 0px;
   margin-block-end: 0px;
   margin-top: 2px;
   font-weight: 300;
+}
+.restaurants__list__link__figure__icons {
+  position: relative;
+  height: 26px;
+  margin-top: 17px;
+}
+.restaurants__list__link__figure__icons:hover .heart-empty {
+  opacity: 0;
+  transition-duration: 0.25s;
+}
+.restaurants__list__link__figure__icons:hover .heart-full {
+  opacity: 1;
+}
+.restaurants__list__link__figure__icons__heart {
+  font-size: 26px;
+}
+.restaurants__list__link__figure__icons .heart-full {
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition-duration: 0.25s;
 }
 
 .image-bloc__image {

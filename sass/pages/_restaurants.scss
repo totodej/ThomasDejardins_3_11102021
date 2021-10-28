@@ -1,3 +1,5 @@
+
+
 .restaurants {
     background-color: #F6F6F6;
     padding: 63px 20px;
@@ -38,37 +40,51 @@
                 height: 174px;
                 object-fit: cover;
             }
-            &__description {
-                position: relative;
+            &__figure {
+                display: grid;
+                grid-template-columns: 1fr 26px 25px;
                 color: black;
-                padding-left: 14px;
-                &__icon {
-                    position: absolute;
-                    top: 23px;
-                    right: 25px;
-                    font-size: 26px; 
-                    &--display {
-                        position: absolute;
-                        top: 23px;
-                        right: 25px;
-                        font-size: 26px;
-                        opacity: 0;
-                        color: linear-gradient(180deg, #9b44d9 -10%, #e44fd7 110%);
-                        &:hover {
+                &__description {
+                    padding-left: 14px;
+                    &__heading {
+                        @include margin-block; 
+                        padding-top: 17px;
+                        font-size: 17px;
+                        font-weight: 500;
+                    }
+                    &__text {
+                        @include margin-block;
+                        margin-top: 2px;
+                        font-weight: 300;
+                    }
+                } 
+                &__icons {
+                    position: relative;
+                    height: 26px;
+                    margin-top: 17px;
+                    &:hover {
+                        .heart-empty {
+                            opacity: 0;
+                            transition-duration: 0.25s;
+                        }
+                        .heart-full{
                             opacity: 1;
+                            
                         }
                     }
-                }
-                &__heading {
-                    @include margin-block; 
-                    padding-top: 17px;
-                    font-size: 17px;
-                    font-weight: 500;
-                }
-                &__text {
-                    @include margin-block;
-                    margin-top: 2px;
-                    font-weight: 300;
+                    &__heart {
+                        font-size: 26px; 
+                    }
+                    .heart-full {
+                        background: linear-gradient(0deg, #FF79DA, #9356DC);
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                        position: absolute;
+                        top: 0;
+                        left:0;
+                        opacity: 0;
+                        transition-duration: 0.25s;
+                    }
                 }
             }
         }
