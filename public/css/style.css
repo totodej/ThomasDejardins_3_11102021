@@ -246,6 +246,7 @@ body {
   position: relative;
   text-decoration: none;
   height: 250px;
+  box-shadow: 1px 8px 17px -11px grey;
 }
 .restaurants__list__link__new {
   position: absolute;
