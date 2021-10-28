@@ -17,6 +17,9 @@
             color: white;
             text-decoration: none;
             font-weight: 400;
+            &:hover {
+                text-decoration: underline;
+            }
             &__icon {
                 margin-right: 11px;
                 &--margin {
