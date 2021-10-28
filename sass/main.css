@@ -449,13 +449,20 @@ body {
 
 .menu {
   background-color: #F6F6F6;
-  padding: 45px 10px;
   border-radius: 40px 40px 0px 0px;
   margin-top: -45px;
+  padding: 45px 10px;
   position: relative;
 }
 
-.menu__heading {
+.menu__header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 26px 28px;
+      grid-template-columns: 1fr 26px 28px;
+}
+
+.menu__header__heading {
   font-family: "Shrikhand";
   font-size: 1.750em;
   font-weight: 500;
@@ -466,11 +473,38 @@ body {
           margin-block-end: 0px;
 }
 
-.menu__icon {
-  position: absolute;
-  top: 50px;
-  right: 38px;
+.menu__header__icons {
+  height: 26px;
+  margin-top: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu__header__icons:hover .heart-empty {
+  opacity: 0;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
+}
+
+.menu__header__icons:hover .heart-full {
+  opacity: 1;
+}
+
+.menu__header__icons__heart {
   font-size: 26px;
+}
+
+.menu__header__icons .heart-full {
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(0deg, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transition-duration: 0.25s;
+          transition-duration: 0.25s;
 }
 
 .menu__list {

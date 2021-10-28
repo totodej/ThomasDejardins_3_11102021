@@ -1,21 +1,48 @@
 .menu {
     background-color: #F6F6F6;
-    padding: 45px 10px;
     border-radius: 40px 40px 0px 0px;
     margin-top: -45px;
+    padding: 45px 10px;
     position: relative;
-    &__heading {
-        font-family: "Shrikhand";
-        font-size: 1.750em;
-        font-weight: 500;
-        padding: 0px 10px;
-        @include margin-block;
-    }
-    &__icon {
-        position: absolute;
-        top: 50px;
-        right: 38px;
-        font-size: 26px;
+    &__header {
+        display: grid;
+        grid-template-columns: 1fr 26px 28px;
+        &__heading {
+            font-family: "Shrikhand";
+            font-size: 1.750em;
+            font-weight: 500;
+            padding: 0px 10px;
+            @include margin-block;
+        }
+        &__icons {
+            height: 26px;
+            margin-top: 5px;
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                .heart-empty {
+                    opacity: 0;
+                    transition-duration: 0.25s;
+                }
+                .heart-full{
+                    opacity: 1;
+                    
+                }
+            }
+            &__heart {
+                font-size: 26px;
+            }
+            .heart-full {
+                background: linear-gradient(0deg, #FF79DA, #9356DC);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                position: absolute;
+                top: 0;
+                left:0;
+                opacity: 0;
+                transition-duration: 0.25s;
+            }
+        }
     }
     &__list {
         display: grid;
