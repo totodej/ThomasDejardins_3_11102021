@@ -404,29 +404,62 @@ body {
   box-shadow: 1px 3px 14px -7px grey;
   border-radius: 15px;
   cursor: pointer;
-  padding: 10px;
-  position: relative;
+  display: flex;
+  overflow: hidden;
 }
-.menu__list__category__listing__choice__title {
+.menu__list__category__listing__choice:hover .check {
+  width: 59px;
+}
+.menu__list__category__listing__choice:hover .fa-check-circle {
+  transform: rotate(360deg);
+}
+.menu__list__category__listing__choice__description {
+  padding: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  flex: 1;
+}
+.menu__list__category__listing__choice__description__title {
   margin-block-start: 0px;
   margin-block-end: 0px;
   font-weight: 400;
   font-size: 1.165em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
-.menu__list__category__listing__choice__description {
+.menu__list__category__listing__choice__description__text {
   margin-block-start: 0px;
   margin-block-end: 0px;
   font-weight: 300;
   margin-top: 7px;
   font-size: 0.96em;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu__list__category__listing__choice__price {
   margin-block-start: 0px;
   margin-block-end: 0px;
-  position: absolute;
   font-weight: 500;
-  right: 23px;
-  bottom: 10px;
+  margin-top: 39px;
+  margin-right: 23px;
+  transition: transform 1s;
+}
+.menu__list__category__listing__choice__check {
+  background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  width: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition-property: width;
+  transition-duration: 1s;
+}
+.menu__list__category__listing__choice__check__circle {
+  color: white;
+  transition: transform 1s;
 }
 .menu__button {
   text-align: center;
