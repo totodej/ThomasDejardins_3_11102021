@@ -42,12 +42,6 @@ body {
   padding-top: 30px;
   row-gap: 17px;
 }
-@media screen and (min-width: 992px) {
-  .footer__list {
-    grid-template-columns: repeat(4, 1fr);
-    column-gap: 17px;
-  }
-}
 .footer__list__link {
   color: white;
   text-decoration: none;
@@ -241,6 +235,12 @@ body {
   grid-template-columns: 100%;
   row-gap: 43px;
   margin: 43px 0px 50px;
+}
+@media screen and (min-width: 1200px) {
+  .menu__list {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+  }
 }
 .menu__list__category__heading {
   text-transform: uppercase;
