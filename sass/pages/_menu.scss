@@ -81,25 +81,60 @@
                     box-shadow: 1px 3px 14px -7px grey;
                     border-radius: 15px;
                     cursor: pointer;
-                    padding: 10px;
-                    position: relative;
-                    &__title {
-                        @include margin-block;
-                        font-weight: 400;
-                        font-size: 1.165em;
+                    display: flex;
+                    overflow: hidden;
+                    &:hover {
+                        .check {
+                            width: 59px;
+                        }
+                        .fa-check-circle {
+                            transform: rotate(360deg);
+                        }   
                     }
                     &__description {
-                        @include margin-block;
-                        font-weight: 300;
-                        margin-top: 7px;
-                        font-size: 0.960em;
+                        padding: 10px;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        flex: 1;
+                        &__title {
+                            @include margin-block;
+                            font-weight: 400;
+                            font-size: 1.165em;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
+                        &__text {
+                            @include margin-block;
+                            font-weight: 300;
+                            margin-top: 7px;
+                            font-size: 0.96em;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                        }
                     }
                     &__price {
                         @include margin-block;
-                        position: absolute;
                         font-weight: 500;
-                        right: 23px;
-                        bottom: 10px;
+                        margin-top: 39px;
+                        margin-right: 23px;
+                        transition: transform 1s;
+                    }   
+                    &__check {
+                        background-color: $color-tertiary;
+                        border-radius: 0px 15px 15px 0px;
+                        width: 0px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition-property: width;
+                        transition-duration: 1s;
+                        &__circle {
+                            color: white;
+                            transition: transform 1s;
+                        }
                     }
                 }
             }
@@ -134,3 +169,4 @@
         animation: item-down 0.5s ease-in-out $i*0.1s;
     }
   }
+
