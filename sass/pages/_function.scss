@@ -26,7 +26,7 @@
             font-weight: 400;
             font-size: 1.0em;
             &:hover {
-                box-shadow: 1px 3px 14px -7px grey;
+                box-shadow: 1px 3px 14px -3px grey;
                 background-color: lighten($color-primary,35%);
                 .fas {
                     color: $color-primary;
